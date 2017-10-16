@@ -1,6 +1,5 @@
 
 hash = {}
-counter = 1
 
 def calcNum(arg)
 
@@ -16,9 +15,8 @@ def calcNum(arg)
 
 end
 
-50.times do
-  hash[counter] = calcNum(counter)
-  counter += 1
+(1..50).each do |count|
+  hash[count] = calcNum(count)
 end
 
 require 'pp'
